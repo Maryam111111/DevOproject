@@ -14,10 +14,10 @@ COPY . .
 
 # Set environment variables for Django settings
 ENV PYTHONUNBUFFERED 1
-ENV DJANGO_SETTINGS_MODULE=your_project_name.settings
+ENV DJANGO_SETTINGS_MODULE=JWL.settings
 
 # Expose the port your app will run on (default Django port)
 EXPOSE 8000
 
 # Run the Django application using Gunicorn (or any other WSGI server)
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "your_project_name.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "JWL.wsgi:application"]

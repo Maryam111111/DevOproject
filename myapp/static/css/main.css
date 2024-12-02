@@ -1,0 +1,128 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .image-container img {
+        margin: 0 10px;
+        max-width: 50%;
+        height: 50%;
+    }
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #FFFFFF;
+    padding: 5px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+   .marquee-container {
+            width: 100%; /* Adjusts to the width of the parent container */
+            overflow: hidden; /* Hides the overflow */
+        }
+
+        .marquee-content {
+            display: inline-block; /* Allows for horizontal scrolling */
+            white-space: nowrap; /* Prevents wrapping of the text */
+            animation: marquee 30s linear infinite; /* Animates the text */
+            color: #FFD700;
+            background-color: #808080;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%); /* Start off-screen to the right */
+            }
+            100% {
+                transform: translateX(-100%); /* End off-screen to the left */
+            }
+        }
+.image-in-h1 {
+    width:100px;
+    height: 100px;
+    margin-right: 10px;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 10px 10px;
+    text-align: center;
+    background-color: #FDDA0D;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+section p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 14px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}

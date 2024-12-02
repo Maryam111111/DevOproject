@@ -1,0 +1,61 @@
+/* Style for car cards */
+#car-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.car-card {
+    width: 250px;
+    height: 350px;  /* Fixed height for consistency */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure all images fit within the card */
+.car-image {
+    width: 100%;         /* Full width of the card */
+    height: 100%;       /* Fixed height */
+    object-fit: cover;   /* Ensures the image covers the area without distortion */
+    object-position: center; /* Center the image in case it needs cropping */
+}
+
+/* Car info section */
+.car-info {
+    padding: 15px;
+    flex-grow: 1;  /* Allow this to grow and take up remaining space */
+}
+
+.car-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.car-info p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style for the button */
+#view-basket {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#view-basket:hover {
+    background-color: #0056b3;
+}

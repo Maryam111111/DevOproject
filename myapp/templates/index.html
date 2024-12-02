@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'Shopping_car' %}">Products</a></li>
+                <li><a href="{% url 'Contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+     <div class="marquee-container">
+        <div class="marquee-content">
+           !* Jewelleryaction *!
+        </div>
+    </div>
+    <div class="image-container">
+    <img src="/static/images/1.jpg" alt="Image 1">
+    <img src="/static/images/4.jpg" alt="Image 2">
+    <img src="/static/images/2.jpg" alt="Image 4">
+    </div>
+    <section>
+        <h2>Call us</h2>
+        <p>+44 111-1111</p>
+    </section>
+
+
+</body>
+</html>
